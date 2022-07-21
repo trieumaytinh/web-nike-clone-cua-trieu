@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.SPH {
+  position: sticky;
+  top: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+  height: 51px;
+  align-items: center;
+  margin-top: 80px;
+  z-index: 200;
+  transition: all 0.3s ease;
+}
+.SPH-Header {
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+.SPH-Header.smallfont {
+  font-size: 16px;
+}
+.SPH-Tool {
+  display: flex;
+  height: 51px;
+  align-items: center;
+}
+.SPH-FilterContainer {
+  display: flex;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.SPH-FilterIcon {
+  margin-left: 8px;
+}
+.SPH-SortContainer {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.SPH-DownIcon,
+.SPH-UpIcon {
+  margin-left: 8px;
+  width: 14px;
+  height: 14px;
+}
+.SPH-Dropdown {
+  position: absolute;
+  right: 50px;
+  padding: 20px;
+  padding-bottom: 10px;
+  z-index: -1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  top: 40px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s ease, top 0.3s ease;
+  line-height: 30px;
+}
+.SPH-Dropdown p {
+  cursor: pointer;
+}
+
+.SPH-DropdownText1.pricechoose,
+.SPH-DropdownText2.pricechoose {
+  color: #757575;
+}
+.SPH-Dropdown.dropdownnotshow {
+  top: -10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.14s ease-in, top 0.4s ease, opacity 0.2s ease;
+}
+@media (max-width: 960px) {
+  .SPH {
+    display: none;
+  }
+}

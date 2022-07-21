@@ -1,0 +1,70 @@
+.OPIM {
+  width: calc(100% / 3 - 20px / 3);
+  box-sizing: border-box;
+}
+.OPIM:nth-child(n + 4) {
+  margin-top: 50px;
+}
+.OPIM:nth-child(3n + 2),
+.OPIM:nth-child(3n + 3) {
+  margin-left: 10px;
+}
+.OPIM-ImageContainer {
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.OPIM-ImageContainer img {
+  width: 100%;
+}
+.OPIM-InfoContainer {
+  font-size: 16px;
+  padding-top: 6px;
+  cursor: pointer;
+  position: relative;
+}
+.OPIM-InfoContainer p:nth-child(1) {
+  margin-bottom: 6px;
+}
+.OPIM-InfoContainer p:nth-child(2) {
+  color: #757575;
+  margin-bottom: 6px;
+}
+.OPIM-InfoContainer p:nth-child(3) {
+  color: #757575;
+  margin-bottom: 14px;
+}
+.OPIM-InfoContainer p:nth-child(5) {
+}
+
+.OPIM:hover .OPIM-InfoContainer p:nth-child(1),
+.OPIM:hover .OPIM-InfoContainer p:nth-child(2),
+.OPIM:hover .OPIM-InfoContainer p:nth-child(3) {
+  visibility: hidden;
+}
+
+.OPIM-OtherContainer {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  top: 10px;
+  display: none;
+}
+
+.OPIM-OtherImage {
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+}
+
+.OPIM-OtherImage:nth-child(n + 2) {
+  margin-left: 5px;
+}
+.OPIM:hover .OPIM-OtherContainer {
+  display: block;
+}
+
+.OPIM:hover .OPIM-InfoContainer p:nth-child(5) {
+  position: relative;
+  top: -20px;
+}

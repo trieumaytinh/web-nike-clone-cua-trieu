@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.BT {
+  box-sizing: border-box;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  transition: box-shadow 1s cubic-bezier(0.25, 0.8, 0.25, 1),
+    transform 0.5s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: 20px;
+  transform: translateY(0);
+}
+.BT:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.BT.slideleft {
+  transform: translateY(-150%);
+}
+.BT.shaking {
+  animation: shake 0.5s;
+  animation-iteration-count: 1s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.BT p {
+  margin: 20px 0;
+}
+.BT-ImageContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.BT-Image1Container {
+  border: 1px solid #dfdede;
+  border-radius: 8px;
+  position: relative;
+  flex: 1;
+  margin-right: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.4s ease, transform 0.7s ease;
+}
+.BT-Image1Container.genderchoose,
+.BT-Image2Container.genderchoose {
+  border-color: black;
+}
+.BT-Image1Container.genderchoose:hover,
+.BT-Image2Container.genderchoose:hover {
+  border-color: black;
+}
+.BT-Image2Container {
+  border: 1px solid #dfdede;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 4px;
+  transition: border-color 0.4s ease, transform 0.7s ease;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+.BT-Image1Container:hover,
+.BT-Image2Container:hover {
+  border-color: rgb(119, 117, 117);
+}
+
+.BT-Image1Container:active,
+.BT-Image2Container:active {
+  transform: scale(1.2);
+}
+.BT-Image1Container.genderchoose:active,
+.BT-Image2Container.genderchoose:active {
+  border-color: #dfdede;
+}
+.BT-Image1Container img {
+  height: 200px;
+  margin-top: 4px;
+  position: relative;
+}
+.BT-Image2Container img {
+  margin-top: 4px;
+  position: relative;
+  height: 200px;
+}
+.BT input {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border: 1px solid #dfdede;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.BT input:focus,
+.BT input:hover {
+  border-color: black;
+}
+.BT button {
+  margin-top: 30px;
+  height: 50px;
+  width: 95%;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-color: transparent;
+}
+.BT button:hover {
+  background-color: #757575;
+}
+@media (max-width: 500px) {
+  .BT {
+    margin-top: 50px;
+  }
+}

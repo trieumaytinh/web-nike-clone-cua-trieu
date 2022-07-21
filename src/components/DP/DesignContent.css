@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.DC {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  display: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.DC button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  border: none;
+  width: 28%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  transition: all 0.3s ease;
+}
+.DC button:hover {
+  cursor: pointer;
+  background-color: #757575;
+}
+.DC-Btn:active {
+  transform: translateX(-50%), scale(1.2);
+}
+
+.DC-ModelContainer {
+  position: relative;
+  width: 13%;
+  margin: 0 auto;
+  top: 20px;
+  margin-bottom: 50px;
+}
+
+.DC-ModelContainer img {
+  position: relative;
+  height: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.DC-TopProductContainer {
+  width: 15%;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  max-width: 230px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-width: 190px;
+  border-radius: 6px;
+}
+
+.DC-TopProductContainer:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.DC-TopProductContainer img {
+  width: 100%;
+}
+
+.DC-TopInfoContainer {
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+.DC-TopInfoContainer p:nth-child(2) {
+  color: #757575;
+  margin-bottom: 4px;
+}
+.DC-MiddleProductContainer {
+  width: 15%;
+  min-width: 190px;
+  position: absolute;
+  max-width: 230px;
+  border-radius: 6px;
+  bottom: 0;
+  right: 20%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.DC-MiddleProductContainer:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.DC-MiddleProductContainer img {
+  width: 100%;
+}
+
+.DC-MiddleInfoContainer {
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+.DC-MiddleInfoContainer p:nth-child(2) {
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.DC-BottomProductContainer {
+  width: 15%;
+  border-radius: 6px;
+  max-width: 230px;
+  min-width: 190px;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.DC-BottomProductContainer:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.DC-BottomProductContainer img {
+  width: 100%;
+}
+
+.DC-BottomInfoContainer {
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+.DC-BottomInfoContainer p:nth-child(2) {
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.DC-OuterProductContainer {
+  width: 15%;
+  max-width: 230px;
+  min-width: 190px;
+  position: absolute;
+  border-radius: 6px;
+  top: 0;
+  left: 20%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.DC-OuterProductContainer:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.DC-OuterProductContainer img {
+  width: 100%;
+}
+
+.DC-OuterInfoContainer {
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+.DC-OuterInfoContainer p:nth-child(2) {
+  color: #757575;
+  margin-bottom: 4px;
+}
+.DC-TopProductContainer p:first-child,
+.DC-MiddleProductContainer p:first-child,
+.DC-BottomProductContainer p:first-child,
+.DC-OuterProductContainer p:first-child {
+  text-overflow: ellipsis;
+}
+
+.DC-RandomIcon {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  height: 24px;
+  width: 24px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+.DC-RandomIcon:hover {
+  transform: scale(1.2);
+}
+.DC-RandomIcon.noRandom {
+  color: rgb(208, 208, 206);
+}
+
+
+@media (min-width: 1365px) {
+  .DC-MiddleProductContainer {
+    bottom: -30px;
+  }
+  .DC-BottomProductContainer {
+    bottom: -30px;
+  }
+}
+@media (min-width: 1500px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer {
+    right: 28%;
+  }
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    left: 28%;
+  }
+  .DC button {
+    width: 12%;
+  }
+}
+@media (max-width: 1200px) {
+  .DC-MiddleProductContainer {
+    bottom: 4%;
+  }
+  .DC-BottomProductContainer {
+    bottom: 4%;
+  }
+  .DC button {
+    width: 400px;
+  }
+}
+@media (max-width: 960px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer {
+    right: 12%;
+  }
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    left: 12%;
+  }
+  /* .DC button {
+    width: 35%;
+  } */
+}
+
+@media (max-width: 750px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer {
+    right: 6%;
+  }
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    left: 6%;
+  }
+}
+
+@media (max-width: 670px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer {
+    right: 4%;
+  }
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    left: 4%;
+  }
+}
+@media (max-width: 610px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer,
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    min-width: 170px;
+  }
+}
+@media (max-width: 560px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer {
+    right: 1%;
+    min-width: 160px;
+  }
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    min-width: 160px;
+    left: 1%;
+  }
+}
+@media (max-width: 499px) {
+  .DC-TopProductContainer,
+  .DC-MiddleProductContainer {
+    right: 5px;
+    min-width: 120px;
+  }
+  .DC-OuterProductContainer,
+  .DC-BottomProductContainer {
+    min-width: 120px;
+    left: 5px;
+  }
+  .DC-MiddleProductContainer {
+    bottom: 10%;
+  }
+  .DC-BottomProductContainer {
+    bottom: 10%;
+  }
+  .DC-OuterProductContainer,
+  .DC-TopProductContainer {
+    top: 5%;
+  }
+  .DC button {
+    bottom: -50px;
+    width: 95%;
+    height: 70px;
+    border-radius: 60px;
+  }
+  .DC-OuterPrice,
+  .DC-TopPrice,
+  .DC-BottomPrice,
+  .DC-MiddlePrice {
+    padding-bottom: 16px;
+  }
+}

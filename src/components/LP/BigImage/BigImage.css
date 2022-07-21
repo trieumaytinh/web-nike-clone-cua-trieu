@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.BIG {
+  box-sizing: border-box;
+  padding: 0 50px;
+  position: relative;
+  max-width: 1550px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.BIG-ImageContainer {
+  position: relative;
+  width: 100%;
+}
+.BIG-ImgFull {
+  position: relative;
+  width: 100%;
+}
+.BIG-ImgRes {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.BIG-TextContainer {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+  margin-top: 55px;
+}
+
+.BIG-Text1 {
+  position: relative;
+}
+.BIG-Text2 {
+  position: relative;
+  font-family: NikeFont;
+  font-size: 76px;
+  letter-spacing: -6px;
+  top: -10px;
+}
+.BIG-Text3 {
+  position: relative;
+}
+.BIG-Btn {
+  position: relative;
+  padding: 10px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.BIG-Btn:hover {
+  cursor: pointer;
+  background-color: #757575;
+}

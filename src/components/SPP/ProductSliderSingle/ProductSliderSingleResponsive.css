@@ -1,0 +1,20 @@
+@media (max-width:960px) {
+    .PSS {
+        margin-top: 50px;
+    }
+    .PSS-TopContainer {
+        /* border: 1px solid red; */
+        padding: 0 24px;
+    }
+    .PSS-BottomContainer {
+        /* border: 1px solid blue; */
+        padding: 0 24px;
+        margin-top: 0;
+    }
+    .PSS-ImageContainer {
+        width: 70%;
+    }
+    .PSS-TextContainer {
+        font-size: 14px;
+    }
+}

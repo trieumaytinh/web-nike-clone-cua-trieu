@@ -1,0 +1,176 @@
+.FBR {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10000000000000000000000;
+  background-color: white;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 40px;
+}
+.FBR.FBRshow {
+  display: block;
+}
+.FBR-Xicon {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: 40px;
+  right: 20px;
+  cursor: pointer;
+}
+.FBR-Header {
+  font-size: 24px;
+}
+.FBR-PriceContainer {
+  list-style: none;
+  margin-top: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.FBR-PriceContainer li {
+  font-family: Arial;
+}
+.FBR-GenderContainer {
+  list-style: none;
+  line-height: 30px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.FBR-GenderContainer li {
+  font-family: Arial;
+}
+.FBR-TypeContainer {
+  list-style: none;
+  line-height: 40px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.FBR-TypeContainer li {
+  padding-left: 10px;
+  cursor: pointer;
+}
+.FBR-Colour {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.FBR-Colour p {
+  position: absolute;
+  top: 5px;
+}
+.FBR-Colour li {
+  box-sizing: border-box;
+  width: calc(100% / 3);
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.FBR-Colour li:nth-child(n + 4) {
+  margin-top: 5px;
+}
+.FBR-Colour li::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  display: block;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 4px;
+}
+
+.FBR-Colour li:nth-child(3)::before {
+  background-color: blue;
+}
+.FBR-Colour li:nth-child(4)::before {
+  background-color: brown;
+}
+.FBR-Colour li:nth-child(5)::before {
+  background-color: green;
+}
+.FBR-Colour li:nth-child(6)::before {
+  background-color: grey;
+}
+.FBR-Colour li:nth-child(7)::before {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+.FBR-Colour li:nth-child(8)::before {
+  background-color: orange;
+}
+.FBR-Colour li:nth-child(9)::before {
+  background-color: pink;
+}
+.FBR-Colour li:nth-child(10)::before {
+  background-color: purple;
+}
+.FBR-Colour li:nth-child(11)::before {
+  background-color: red;
+}
+.FBR-Colour li:nth-child(12)::before {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+}
+.FBR-Colour li:nth-child(13)::before {
+  background-color: yellow;
+}
+
+.FBR-BtnContainer {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.FBR-BtnContainer button:first-child {
+  flex: 1;
+  margin-right: 4px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  line-height: 50px;
+  font-size: 16px;
+  border: 1px solid #b8b8b8;
+}
+.FBR-BtnContainer button:nth-child(2) {
+  border-radius: 30px;
+  height: 50px;
+  line-height: 50px;
+  flex: 1;
+  margin-left: 4px;
+  border-color: black;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+
+.FBR-Colour li:hover,
+.FBR-TypeContainer li:hover,
+.FBR-GenderContainer li:hover,
+.FBR-PriceContainer li:hover {
+  color: #757575;
+}

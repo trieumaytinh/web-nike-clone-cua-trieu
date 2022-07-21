@@ -1,0 +1,61 @@
+.NBR {
+  position: fixed;
+  top: 0;
+  /* right: 0; */
+  width: 100%;
+  z-index: 2000000000000;
+  height: 100%;
+  display: none;
+  /* display: flex; */
+}
+.NBR.NBRShow {
+  display: flex;
+}
+.NBR-Xicon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.NBR-Blank {
+  position: relative;
+  left: 0;
+  width: calc(100% - 250px);
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+.NBR-Blank.NBRblankshow {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.NBR-Content {
+  width: 250px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  background-color: white;
+  position: relative;
+  right: -250px;
+  transition: right 0.3s ease;
+}
+
+.NBR-Content.NBRcontentshow {
+  right: 0;
+}
+
+.NBR-List {
+  list-style: none;
+}
+.NBR-List li {
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.NBR-List li:nth-child(4) {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  color: transparent;
+}

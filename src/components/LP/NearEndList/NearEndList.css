@@ -1,0 +1,31 @@
+.NEL {
+    display: flex;
+    font-family:Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.NEL-UlContainer {
+    margin: 0 auto;
+}
+.NEL-Ul {
+    list-style-type: none;
+    margin: 0 50px;
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.NEL-Ul li {
+    line-height: 30px;
+    color: #757575;
+    /* border: 1px solid red; */
+}
+
+.NEL-Ul li:hover  {
+    color: black;
+    cursor: pointer;
+}

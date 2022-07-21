@@ -1,0 +1,16 @@
+.ShoppingContainer {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 50px;
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .ShoppingContainer {
+    padding: 0;
+  }
+  .FB {
+    display: none;
+  }
+}

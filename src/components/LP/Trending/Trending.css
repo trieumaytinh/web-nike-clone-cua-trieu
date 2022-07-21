@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+.T-Image1Res,
+.T-Image2Res {
+  display: none;
+}
+.T {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  max-width: 1550px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.T-Header {
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+.T-ImageContainer {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.T-Image1Container {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.T-Image2Container {
+  margin-left: 4px;
+  width: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.T-Img1Full,
+.T-Img2Full {
+  position: relative;
+  height: 700px;
+  right: 0;
+  transition: all 0.3s ease;
+  z-index: -20000;
+}
+
+.T-TextContainer1,
+.T-TextContainer2 {
+  position: absolute;
+  z-index: 20;
+  font-size: 20px;
+  bottom: 45px;
+  left: 50px;
+}
+.T-TextContainer1 p,
+.T-TextContainer2 p {
+  margin-bottom: 35px;
+}
+.T-TextContainer2 p {
+  color: white;
+}
+.T-TextContainer1 button {
+  padding: 9px 22px;
+  background-color: black;
+  border-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.T-TextContainer2 button {
+  padding: 9px 22px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.T-TextContainer1 button:hover {
+  cursor: pointer;
+  background-color: #757575;
+}
+
+.T-TextContainer2 button:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}

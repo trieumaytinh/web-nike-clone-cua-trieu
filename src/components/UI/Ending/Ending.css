@@ -1,0 +1,150 @@
+.Ending {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+}
+
+.Ending-Top {
+  width: 100%;
+  box-sizing: border-box;
+  height: 250px;
+  /* border: 1px solid blue; */
+  display: flex;
+}
+.Ending-Bottom {
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  position: relative;
+  /* align-items: center; */
+}
+.Ending-BottomLeft {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.Ending-BottomLeftLocation {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.Ending-LocationIcon {
+  fill: #fff;
+}
+.Ending-BottomRight {
+  /* border: 1px solid blue; */
+  flex: 1;
+}
+.Ending-BottomRight ul {
+  list-style-type: none;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 20px;
+  position: absolute;
+  right: 20px;
+  height: 50px;
+  bottom: 0;
+}
+
+.Ending-BottomRight ul li {
+  color: #7e7e7e;
+  font-size: 10px;
+  margin: 0 16px;
+  cursor: pointer;
+}
+.Ending-BottomRight ul li:hover {
+  color: #fff;
+}
+.Ending-TopLeft {
+  flex: 1;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.Ending-TopLeft1,
+.Ending-TopLeft2,
+.Ending-TopLeft3 {
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.Ending-TopLeft1 {
+  margin-left: 40px;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+.Ending-TopLeft2 li:first-child,
+.Ending-TopLeft3 li:first-child {
+  margin-bottom: 8px;
+}
+.Ending-TopLeft2 li:nth-child(n + 2),
+.Ending-TopLeft3 li:nth-child(n + 2) {
+  color: #7e7e7e;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.Ending-TopLeft1 li {
+  line-height: 30px;
+}
+.Ending-TopRight {
+  flex: 1;
+  /* border: 1px solid wheat; */
+  position: relative;
+}
+.Ending-TwitterIcon,
+.Ending-FacebookIcon,
+.Ending-YoutubeIcon,
+.Ending-InstagramIcon {
+  fill: #7e7e7e;
+  position: absolute;
+  top: 40px;
+  cursor: pointer;
+}
+
+.Ending-InstagramIcon {
+  right: 30px;
+}
+
+.Ending-YoutubeIcon {
+  right: 75px;
+}
+
+.Ending-FacebookIcon {
+  right: 120px;
+}
+
+.Ending-TwitterIcon {
+  right: 165px;
+}
+
+.Ending-TwitterIcon:hover,
+.Ending-FacebookIcon:hover,
+.Ending-YoutubeIcon:hover,
+.Ending-InstagramIcon:hover {
+  fill: #fff;
+}
+
+.Ending-TopLeft2 li:nth-child(n + 2):hover,
+.Ending-TopLeft3 li:nth-child(n + 2):hover {
+  color: white;
+  cursor: pointer;
+}
+
+.Ending-TopLeft1 li,
+.Ending-TopLeft2 li,
+.Ending-TopLeft3 li {
+  cursor: pointer;
+}

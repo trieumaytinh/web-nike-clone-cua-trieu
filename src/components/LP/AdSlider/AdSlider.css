@@ -1,0 +1,23 @@
+.AS {
+  position: relative;
+  height: 58px;
+  background-color: whitesmoke;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+/*!=========================================== TEXT ====================================================  */
+.AS-Text1 {
+  font-size: 16px;
+  position: relative;
+  top: 8px;
+}
+
+.AS-Text2 {
+  position: relative;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: underline;
+}

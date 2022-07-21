@@ -1,0 +1,21 @@
+
+
+.SM {
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-left: 250px; /* dung ra la 260 nhung do paddingleft 10px nen phai tru ra */
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  
+}
+.SM.showfull {
+  margin-left: 0;
+}
+@media (max-width:960px) {
+  .SM {
+    margin-left: 0;
+  }
+}

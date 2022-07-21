@@ -1,0 +1,133 @@
+.NB {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 50px;
+  padding-right: 42px;
+  align-items: center;
+  z-index: 100;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+}
+
+.NB-Middle {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  height: 60px;
+  align-items: center;
+  margin-left: 220px;
+  /* border: 1px solid blue; */
+}
+
+.NB-Middle li {
+  box-sizing: border-box;
+  padding: 16px 12px 18px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.NB-Middle li:hover {
+  border-bottom: 2px solid black;
+}
+
+.NB-Right {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.NB-SearchContainer {
+  width: 180px;
+  /* border: 1px solid blue; */
+  position: relative;
+  margin-right: 20px;
+}
+.NB-CartNumber {
+  position: absolute;
+  right: 16.5px;
+  font-size: 14px;
+  top: 14px;
+  cursor: pointer;
+}
+.NB-SearchIcon:hover,
+.NB-SearchInput:hover,
+.NB-HeartIcon:hover,
+.NB-CartIcon:hover {
+  background-color: #e5e5e5;
+}
+
+.NB-SearchIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* border: 1px solid red; */
+  left: 2px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.NB-SearchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+}
+.NB-HeartIcon {
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.NB-CartIcon {
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 42%;
+  fill: rgb(17, 17, 17);
+  background-color: transparent;
+}
+.NB-BarIcon,
+.NB-SearchIconRes {
+  display: none;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.NB-Blank {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  visibility: hidden;
+  position: relative;
+}
+
+.NB-NikeIcon:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.NB-CartNumber.morenine {
+  top: 15px;
+  right: 12px;
+  font-size: 13px;
+}
+.NB-Middle li:nth-child(4) {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  color: transparent;
+}

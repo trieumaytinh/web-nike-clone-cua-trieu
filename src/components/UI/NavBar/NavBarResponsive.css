@@ -1,0 +1,60 @@
+/*! Biến mất 3 thẻ li của thanh NavBar !*/
+@media (max-width: 1117px) {
+  .NB-Middle li:nth-child(6) {
+    display: none;
+  }
+}
+@media (max-width: 1049px) {
+  .NB-Middle li:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 995px) {
+  .NB-Middle li:nth-child(4) {
+    display: none;
+  }
+}
+/*! Biến mất 3 thẻ li của thanh NavBar !*/
+
+@media (max-width: 960px) {
+  .NB {
+    padding: 0 25px;
+  }
+
+  .NB-Middle {
+    display: none;
+  }
+  .NB-Right {
+    justify-content: space-between;
+  }
+  .NB-SearchContainer {
+    display: none;
+  }
+  .NB-SearchIconRes {
+    display: block;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 4px;
+  }
+  .NB-HeartIcon {
+    display: none;
+  }
+  .NB-BarIcon {
+    display: block;
+    padding: 8px;
+    border-radius: 44%;
+    margin-left: 4px;
+    z-index: 2000;
+  }
+  .NB-SearchIconRes:hover,
+  .NB-BarIcon:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+  }
+  .NB-CartNumber {
+    left: 16px;
+  }
+  .NB-CartNumber.morenine {
+    left: 13px;
+  }
+}

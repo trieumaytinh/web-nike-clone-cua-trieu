@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+.F-Img1Res,
+.F-Img2Res {
+  display: none;
+}
+.F {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  max-width: 1550px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.F-Header {
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+.F-ImageContainer {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.F-Image1Container {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.F-Image2Container {
+  margin-left: 4px;
+  width: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.F-Img1Full,
+.F-Img2Full {
+  position: relative;
+  height: 700px;
+  left: 50%;
+  transition: all 0.3s ease;
+  z-index: -20000;
+  transform: translateX(-50%);
+}
+
+.F-TextContainer1,
+.F-TextContainer2 {
+  position: absolute;
+  z-index: 20;
+  font-size: 20px;
+  bottom: 45px;
+  left: 50px;
+}
+.F-TextContainer1 p,
+.F-TextContainer2 p {
+  margin-bottom: 35px;
+}
+.F-TextContainer2 p {
+  color: white;
+}
+.F-TextContainer1 button {
+  padding: 9px 22px;
+  background-color: black;
+  border-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.F-TextContainer2 button {
+  padding: 9px 22px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.F-TextContainer1 button:hover {
+  cursor: pointer;
+  background-color: #757575;
+}
+
+.F-TextContainer2 button:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+/* @media (max-width: 960px) {
+  .F {
+    padding: 0 25px;
+  }
+  .F-TextContainer1,
+  .F-TextContainer2 {
+    left: 25px;
+    bottom: 25px;
+  }
+  .F-Img1Full,
+  .F-Img2Full {
+    height: 500px;
+  }
+}
+
+@media (max-width: 610px) {
+  .F-ImageContainer {
+    flex-direction: column;
+    justify-content: none;
+  }
+  .F-Image1Container,
+  .F-Image2Container {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+  }
+  .F-Image1Container {
+    margin-bottom: 10px;
+  }
+  .F-Img1Full,
+  .F-Img2Full {
+    display: none;
+  }
+  .F-Img1Res,
+  .F-Img2Res {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
+  }
+  .F-TextContainer1,
+  .F-TextContainer2 {
+    bottom: 25px;
+    right: 25px;
+  }
+} */

@@ -1,0 +1,123 @@
+.FB {
+  width: 210px;
+  position: absolute;
+  height: 500px;
+  overflow: auto;
+  left: 50px;
+  transition: left 0.3s ease;
+}
+.FB.notshow {
+  left: -260px;
+}
+.FB-Type,
+.FB-Gender,
+.FB-Color {
+  padding-top: 20px;
+  list-style-type: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.FB-Type li,
+.FB-Gender li,
+.FB-Color li {
+  line-height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.FB-Type li:hover,
+.FB-Gender li:hover,
+.FB-Color li:hover {
+  color: #757575;
+}
+
+.FB-Type p,
+.FB-Gender p {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.FB-Color {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 50px;
+}
+
+.FB-Color li {
+  width: 32%;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.FB-Color p {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.FB-Color li::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  display: block;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.FB-Color li:nth-child(3)::before {
+  background-color: blue;
+}
+.FB-Color li:nth-child(4)::before {
+  background-color: brown;
+}
+.FB-Color li:nth-child(5)::before {
+  background-color: green;
+}
+.FB-Color li:nth-child(6)::before {
+  background-color: grey;
+}
+.FB-Color li:nth-child(7)::before {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+.FB-Color li:nth-child(8)::before {
+  background-color: orange;
+}
+.FB-Color li:nth-child(9)::before {
+  background-color: pink;
+}
+.FB-Color li:nth-child(10)::before {
+  background-color: purple;
+}
+.FB-Color li:nth-child(11)::before {
+  background-color: red;
+}
+.FB-Color li:nth-child(12)::before {
+  background-color: white;
+}
+.FB-Color li:nth-child(13)::before {
+  background-color: yellow;
+}
+.underlinetext {
+  text-decoration: underline;
+}
+.colorchoose {
+  text-decoration: underline;
+}
+@media (max-width: 960px) {
+  .FB {
+    display: none;
+  }
+}

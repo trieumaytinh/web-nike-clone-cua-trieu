@@ -1,0 +1,146 @@
+/* 
+@media (max-width: 940px) {
+  .T {
+    top: -290px;
+  }
+  .T-Header {
+    margin-left: 30px;
+    margin-bottom: 70px;
+  }
+  .T-Image1Full {
+    height: 70%;
+  }
+  .T-Image2Full {
+    height: 70%;
+  }
+  .T-Image1Text {
+    top: 360px;
+    left: 25px;
+  }
+  .T-Image1Btn {
+    top: 430px;
+    left: 20px;
+  }
+  .T-Image2Text {
+    top: 360px;
+    left: 25px;
+  }
+  .T-Image2Btn {
+    top: 430px;
+    left: 20px;
+  }
+}
+@media (max-width: 610px) {
+  .T {
+    top: -100px;
+  }
+  .T-ImageContainer {
+    flex-direction: column;
+  }
+  .T-Image1Container {
+    width: 100%;
+    margin: 0;
+  }
+  .T-Image2Container {
+    width: 100%;
+    margin: 0;
+  }
+  .T-Image1Full {
+    display: none;
+  }
+  .T-Image2Full {
+    display: none;
+  }
+  .T-Image1Res {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .T-Image2Res {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .T-Image1Text {
+    top: 75%;
+  }
+  .T-Image2Text {
+    top: 75%;
+  }
+  .T-Image1Btn {
+    top: 85%;
+  }
+  .T-Image2Btn {
+    top: 85%;
+  }
+}
+@media (max-width: 550px) {
+  .T {
+    top: -130px;
+  }
+  .T-Header {
+    margin-bottom: 30px;
+  }
+  .T-Image1Text {
+    top: 65%;
+  }
+  .T-Image1Btn {
+    top: 80%;
+  }
+  .T-Image2Text {
+    top: 65%;
+  }
+  .T-Image2Btn {
+    top: 80%;
+  }
+} */
+@media (max-width: 960px) {
+  .T {
+    padding: 0 25px;
+  }
+  .T-TextContainer1,
+  .T-TextContainer2 {
+    left: 25px;
+    bottom: 25px;
+  }
+  .T-Image1Full,
+  .T-Image2Full {
+    height: 500px;
+  }
+}
+
+@media (max-width: 610px) {
+  .T-ImageContainer {
+    flex-direction: column;
+    justify-content: none;
+  }
+  .T-Image1Container,
+  .T-Image2Container {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .T-Image1Container {
+    margin-bottom: 10px;
+  }
+  .T-Image1Full,
+  .T-Image2Full {
+    display: none;
+  }
+  .T-Image1Res,
+  .T-Image2Res {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+
+  }
+  .T-TextContainer1,
+  .T-TextContainer2 {
+    bottom: 25px;
+    right: 25px;
+  }
+}

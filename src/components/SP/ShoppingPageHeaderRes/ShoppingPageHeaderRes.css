@@ -1,0 +1,46 @@
+.SPHRes {
+    position: sticky;
+    height: 51px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 25px;
+    font-family: Helvetica, sans-serif;
+    z-index: 200;
+    display: none;
+    top: 60px;
+    margin-top: 50px;;
+}
+.SPHRes-Text {
+    position: relative;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    transition: all 0.3s ease;
+}
+.SPHRes-Text.ressmallfont {
+    font-size: 16px;
+}
+.SPHRes-FilterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 90px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(204, 204, 204);
+}
+.SPHRes-FilterText {
+    margin-right: 8px;
+}
+.SPHRes-FilterContainer:hover {
+    cursor: pointer;
+    border-color: black;
+}
+
+@media (max-width:960px) {
+    .SPHRes {
+        display: flex;
+    }
+}

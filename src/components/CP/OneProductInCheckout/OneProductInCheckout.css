@@ -1,0 +1,76 @@
+.OPIC {
+  display: flex;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.OPIC-ImageContainer {
+  height: 100%;
+}
+
+.OPIC-ImageContainer img {
+  cursor: pointer;
+  width: 150px;
+}
+
+.OPIC-InfoContainer {
+  width: 100%;
+  padding-left: 32px;
+}
+
+.OPIC-NamePriceContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.OPIC-Info {
+  position: relative;
+}
+.OPIC-Info p:first-child {
+  position: relative;
+  color: #757575;
+  margin-bottom: 8px;
+}
+.OPIC-Info p:nth-child(2) {
+  color: #757575;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.OPIC-SizeContainer {
+  position: relative;
+}
+.OPIC-SizeContainer {
+  /* border: 1px solid red; */
+  color: #757575;
+}
+
+.OPIC-SizeContainer label {
+  /* border: 1px solid blue; */
+  margin-right: 8px;
+}
+.OPIC-SizeContainer select {
+  margin-right: 8px;
+  color: #757575;
+  border: none;
+  outline: none;
+  padding-right: 6px;
+}
+.OPIC-IconContainer {
+  display: inline-block;
+  position: relative;
+  margin-top: 40px;
+}
+
+.OPIC-IconContainer svg {
+  margin: 0 6px;
+  cursor: pointer;
+}
+.OPIC:nth-child(n + 2) {
+  margin-top: 25px;
+}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.DM {
+  box-sizing: border-box;
+  padding: 0 50px;
+  position: relative;
+  max-width: 1550px;
+  margin: 0 auto;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.DM-Header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.DM-ImageContainer {
+  position: relative;
+  width: 100%;
+}
+.DM-ImgFull {
+  position: relative;
+  width: 100%;
+}
+.DM-ImgRes {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.DM-TextContainer {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+.DM-Text1 {
+  font-family: NikeFont;
+  color: white;
+  font-size: 72px;
+  letter-spacing: -4px;
+  margin-bottom: 10px;
+}
+.DM-Text2 {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.DM-Btn {
+  padding: 8px 20px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.DM-Btn:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+@media (max-width: 1129px) {
+  .DM-TextContainer {
+    bottom: 50px;
+  }
+  .DM-Text1 {
+    width: 50%;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .DM-Text2 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 960px) {
+  .DM {
+    padding: 0 25px;
+  }
+  .DM-TextContainer {
+    bottom: 40px;
+    left: 30px;
+  }
+  .DM-Text1 {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .DM-Text2 {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 746px) {
+  .DM-TextContainer {
+    left: 15px;
+    bottom: 30px;
+  }
+  .DM-Text1 {
+    width: 80%;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .DM-Text2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 665px) {
+  .DM-TextContainer {
+    bottom: 50px;
+  }
+  .DM-ImgFull {
+    display: none;
+  }
+  .DM-ImgRes {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .DM-TextContainer {
+    bottom: 60px;
+  }
+  .DM-Text1 {
+    width: 100%;
+    color: black;
+    margin-bottom: 30px;
+  }
+  .DM-Text2 {
+    color: black;
+    margin-bottom: 25px;
+  }
+  .DM-Btn {
+    color: white;
+    background-color: black;
+  }
+}

@@ -1,0 +1,164 @@
+/* @media (max-width: 1129px) {
+  .DM {
+    top: -20px;
+  }
+  .DM-TextContainer {
+    bottom: 20%;
+  }
+  .DM-Text1 {
+    width: 70%;
+    line-height: 60px;
+  }
+  .DM-Text2 {
+    top: 83%;
+  }
+  .DM-Btn {
+    top: 110%;
+  }
+}
+@media (max-width: 960px) {
+  .DM-TextContainer {
+    left: 6%;
+  }
+  .DM-Text1 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .DM-Text2 {
+    top: 70%;
+  }
+  .DM-Btn {
+    top: 110%;
+  }
+}
+@media (max-width:940px) {
+    .DM {
+        top: -460px;
+    }
+}
+@media (max-width: 746px) {
+  .DM-TextContainer {
+    bottom: 33%;
+  }
+  .DM-Text1 {
+    width: 80%;
+    line-height: 42px;
+  }
+  .DM-Text2 {
+    top: 80%;
+  }
+  .DM-Btn {
+    top: 120%;
+  }
+}
+@media (max-width: 665px) {
+  .DM-ImageFull {
+    display: none;
+  }
+
+  .DM-ImageRes {
+    display: block;
+    width: 93%;
+  }
+  .DM-TextContainer {
+    bottom: 15%;
+  }
+}
+@media (max-width:610px) {
+    .DM {
+        top: -60px;
+    }
+}
+@media (max-width: 600px) {
+  .DM-TextContainer {
+    bottom: 20%;
+  }
+  .DM-Text1 {
+    width: 100%;
+    color: black;
+  }
+  .DM-Text2 {
+    color: black;
+  }
+  .DM-Btn {
+    top: 135%;
+    color: white;
+    background-color: black;
+  }
+} */
+@media (max-width: 1129px) {
+  .DM-TextContainer {
+    bottom: 50px;
+  }
+  .DM-Text1 {
+    width: 50%;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .DM-Text2 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 960px) {
+  .DM {
+    padding: 0 25px;
+  }
+  .DM-TextContainer {
+    bottom: 40px;
+    left: 30px;
+  }
+  .DM-Text1 {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .DM-Text2 {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 746px) {
+  .DM-TextContainer {
+    left: 15px;
+    bottom: 30px;
+  }
+  .DM-Text1 {
+    width: 80%;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .DM-Text2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 665px) {
+  .DM-TextContainer {
+    bottom: 50px;
+  }
+  .DM-ImgFull {
+    display: none;
+  }
+  .DM-ImgRes {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .DM-TextContainer {
+    bottom: 60px;
+  }
+  .DM-Text1 {
+    width: 100%;
+    color: black;
+    margin-bottom: 30px;
+  }
+  .DM-Text2 {
+    color: black;
+    margin-bottom: 25px;
+  }
+  .DM-Btn {
+    color: white;
+    background-color: black;
+  }
+}

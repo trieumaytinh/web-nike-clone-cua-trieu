@@ -1,0 +1,21 @@
+/* @media (max-width: 940px) {
+  .ProductSlider-Wrapper {
+    bottom: 200px;
+  }
+}
+@media(max-width:610px) {
+    .ProductSlider-Wrapper {
+        bottom: 0;
+    }
+} */
+@media (max-width: 960px) {
+  .PS-TopContainer {
+    padding: 0 25px;
+  }
+  .PS-BottomContainer {
+    padding: 0 25px;
+  }
+  .PS-ImageContainer {
+    width: 69%;
+  }
+}

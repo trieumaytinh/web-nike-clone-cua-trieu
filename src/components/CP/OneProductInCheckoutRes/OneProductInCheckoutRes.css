@@ -1,0 +1,77 @@
+.OPICR {
+  /* border: 1px solid green; */
+  display: flex;
+  font-size: 16px;
+  margin-top: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.OPICR-ImageContainer {
+  /* border: 1px solid red; */
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease;
+  /* height: 100%; */
+}
+.OPICR-ImageContainer img {
+  width: 150px;
+  transition: all 0.3s ease;
+  height: 150px;
+}
+.OPICR-InfoContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 8px;
+}
+.OPICR-NamePriceContainer {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.OPICR-Info {
+  /* border: 1px solid red; */
+  color: #757575;
+  margin-top: 10px;
+}
+
+.OPICR-SizeContainer {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  color: #757575;
+}
+.OPICR-SizeContainer label {
+  margin-right: 8px;
+}
+.OPICR-SizeContainer select {
+  margin-right: 8px;
+  color: #757575;
+  border: none;
+  outline: none;
+  padding-right: 6px;
+}
+.OPICR-IconContainer {
+  /* border: 1px solid red; */
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+}
+.OPICR-IconContainer svg {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .OPICR-ImageContainer {
+    height: 80px;
+    width: 80px;
+  }
+  .OPICR-ImageContainer img {
+    width: 80px;
+    height: 80px;
+  }
+  .OPICR-IconContainer {
+    margin-top: 25px;
+  }
+}

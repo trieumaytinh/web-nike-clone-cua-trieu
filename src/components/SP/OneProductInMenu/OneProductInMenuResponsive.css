@@ -1,0 +1,80 @@
+/* @media (max-width: 1142px) {
+  .OPIM {
+    width: 29%;
+  }
+  .OPIM:nth-child(3n + 1) {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 960px) {
+  .OPIM {
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .OPIM:nth-child(2n + 1) {
+    padding-right: 3px;
+  }
+  .OPIM:nth-child(2n + 2) {
+    padding-left: 3px;
+  }
+  .OPIM:nth-child(n + 4) {
+    margin: 0;
+  }
+  .OPIM:nth-child(3n + 1) {
+    margin: 0;
+  }
+  .OPIM-Name,
+  .OPIM-Description,
+  .OPIM-Price,
+  .OPIM-Color {
+    padding-left: 6px;
+  }
+  .OPIM-OtherColorContainer {
+    display: none;
+  }
+  .OPIM:hover .OPIM-Description,
+  .OPIM:hover .OPIM-Price,
+  .OPIM:hover .OPIM-Color,
+  .OPIM:hover .OPIM-Name {
+    display: block;
+  }
+  .OPIM:hover .OPIM-OtherColorContainer {
+    display: none;
+  }
+} */
+@media (max-width: 960px) {
+  .OPIM {
+    width: calc(50% - 8px / 2);
+    margin: 0;
+  }
+  .OPIM-InfoContainer {
+    padding-left: 8px;
+  }
+  .OPIM:nth-child(n + 4) {
+    margin: 0;
+  }
+  .OPIM:nth-child(3n + 2),
+  .OPIM:nth-child(3n + 3) {
+    margin: 0;
+  }
+  .OPIM:nth-child(2n + 2) {
+    margin-left: 8px;
+  }
+
+  .OPIM:nth-child(n + 3) {
+    margin-top: 25px;
+  }
+  .OPIM:hover .OPIM-InfoContainer p:nth-child(1),
+  .OPIM:hover .OPIM-InfoContainer p:nth-child(2),
+  .OPIM:hover .OPIM-InfoContainer p:nth-child(3) {
+    visibility: visible;
+  }
+
+  .OPIM:hover .OPIM-OtherContainer {
+    display: none;
+  }
+  .OPIM:hover .OPIM-InfoContainer p:nth-child(5) {
+    top: 0;
+  }
+}
