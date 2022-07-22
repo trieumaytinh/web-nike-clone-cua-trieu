@@ -116,6 +116,7 @@
 .colorchoose {
   text-decoration: underline;
 }
+
 @media (max-width: 960px) {
   .FB {
     display: none;

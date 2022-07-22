@@ -20,7 +20,6 @@ function SingleProduct() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [productIndexInData]);
-  console.log(productIndexInData);
   const {
     name,
     subs,
@@ -36,7 +35,6 @@ function SingleProduct() {
     i41080,
   } = productChosen;
 
-  console.log("ProductChosen", productChosen);
   let fourImageShow;
   let checkoutProduct = {
     name,

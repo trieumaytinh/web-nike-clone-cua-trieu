@@ -36,6 +36,8 @@
 .FBR-PriceContainer li {
   font-family: Arial;
 }
+
+
 .FBR-GenderContainer {
   list-style: none;
   line-height: 30px;
@@ -161,13 +163,15 @@
   flex: 1;
   margin-left: 4px;
   border-color: black;
-  border: 1px solid black;
+  border: 1px solid transparent;
   background-color: black;
   color: white;
   font-size: 16px;
 }
-
-
+.FBR-ApplyBtn:hover {
+  cursor: pointer;
+  background-color: #757575 !important;
+}
 .FBR-Colour li:hover,
 .FBR-TypeContainer li:hover,
 .FBR-GenderContainer li:hover,

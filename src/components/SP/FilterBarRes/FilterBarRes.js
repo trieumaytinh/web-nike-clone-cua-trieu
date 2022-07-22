@@ -24,27 +24,7 @@ function FilterBarRes() {
   } = useContext(ProductContext);
   const [underlineClass1, setUnderlineClass1] = useState("");
   const [underlineClass2, setUnderlineClass2] = useState("");
-  // function priceHandler(e) {
-  //   setUnderlineClass1("");
-  //   setUnderlineClass2("");
-  //   if (e === "highlow") {
-  //     if (underlineClass1 === "underlinetext") {
-  //       setUnderlineClass1("");
-  //       setPriceSorting("none");
-  //     } else {
-  //       setUnderlineClass1("underlinetext");
-  //       setPriceSorting("highlow");
-  //     }
-  //   } else {
-  //     if (underlineClass2 === "underlinetext") {
-  //       setUnderlineClass2("");
-  //       setPriceSorting("none");
-  //     } else {
-  //       setUnderlineClass2("underlinetext");
-  //       setPriceSorting("lowhigh");
-  //     }
-  //   }
-  // }
+
   function genderHandler(e) {
     let updatedGenderSort;
     if (!e.target.checked) {
@@ -221,6 +201,7 @@ function FilterBarRes() {
           Clear
         </button>
         <button
+          className="FBR-ApplyBtn"
           onClick={() => {
             setFilterRes(false);
           }}

@@ -12,7 +12,6 @@ function SingleProductPage() {
       <NavBarRes />
       <SingleProduct />
       <SingleProductRes />
-      {/* <ProductSliderSingle /> */}
     </div>
   );
 }

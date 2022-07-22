@@ -9,7 +9,7 @@ function ShoppingPageHeaderRes() {
   const {sphResHeaderClass,setFilterRes} = uiCtx
   return (
     <div id="SPHRes" className="SPHRes">
-      <p className={sphResHeaderClass}>Men's Clothing</p>
+      <p className={sphResHeaderClass}>Products</p>
       <div onClick={() => {
         setFilterRes(true)
       }} className="SPHRes-FilterContainer">

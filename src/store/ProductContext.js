@@ -15,10 +15,11 @@ const cartReducer = (state, action) => {
   if (action.type === "ADDPRODUCT") {
     const { name, price, mainColor, number } = action.data;
     const updatedPrice = state.price + price;
-    console.log(price);
-    const existingCartItemIndex = state.items.findIndex(
-      (item) => item.name === name && item.mainColor === mainColor
-    );
+    const existingCartItemIndex = state.items.findIndex((item) => {
+      if (item !== null) {
+        return item.name === name && item.mainColor === mainColor;
+      }
+    });
     const existingCartItem = state.items[existingCartItemIndex];
     let updatedItems;
     if (existingCartItem) {
@@ -34,12 +35,9 @@ const cartReducer = (state, action) => {
     } else {
       updatedItems = state.items.concat(action.data);
     }
-    console.log(updatedItems);
-    console.log(updatedPrice);
     return { items: updatedItems, number: state.number, price: updatedPrice };
   }
   if (action.type === "ADJUSTCHECKOUT") {
-    console.log(action.data);
     const updatedNumber = +action.data[0];
     const itemIndexInBag = action.data[1];
     const updated1ProductPrice = +action.data[2];
@@ -60,13 +58,11 @@ const cartReducer = (state, action) => {
     };
   }
   if (action.type === "REMOVEBUTTON") {
-    console.log(action.data);
     const itemIndexInBag = action.data[0];
     const removedNumber = action.data[1];
     const removedPrice = action.data[2];
     let updatedItems = [...state.items];
     updatedItems[itemIndexInBag] = null;
-    console.log(updatedItems);
     return {
       items: updatedItems,
       number: state.number - removedNumber,
@@ -89,7 +85,7 @@ function ProductContextProvider(props) {
   const [menCheck, setMenCheck] = useState(false);
   const [budget, setBudget] = useState(0);
   const [customGender, setCustomGender] = useState("");
-  const [budgetShow,setBudgetShow] = useState(true);
+  const [budgetShow, setBudgetShow] = useState(true);
   const updatedTypeProduct = data
     .map((item, itemIndex) => {
       if (
